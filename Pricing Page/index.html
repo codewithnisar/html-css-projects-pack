@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Plans | Choose Your Perfect Plan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h1>Choose Your <span class="highlight">Perfect Plan</span></h1>
+          <p>
+            Select the plan that best fits your needs. All plans include our
+            30-day money-back guarantee.
+          </p>
+        </div>
+
+        <!-- Pricing Toggle -->
+        <div class="pricing-toggle">
+          <span class="toggle-label active" id="monthlyLabel"
+            >Monthly Billing</span
+          >
+          <div class="toggle-switch">
+            <input type="checkbox" class="toggle-checkbox" id="billingToggle" />
+            <label class="toggle-slider" for="billingToggle"></label>
+          </div>
+          <span class="toggle-label" id="yearlyLabel"
+            >Yearly Billing
+            <span style="color: var(--secondary); font-size: 0.9rem"
+              >(Save 20%)</span
+            ></span
+          >
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-cards">
+          <!-- Basic Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Basic</h3>
+              <div class="pricing-price">
+                <span id="basicPrice">$19</span>
+              </div>
+              <div class="pricing-period">per month</div>
+              <p class="pricing-description">
+                Perfect for individuals getting started
+              </p>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Up to 5 projects</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>10GB storage</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Basic analytics</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Email support</span>
+              </li>
+              <li>
+                <i class="fas fa-times feature-icon feature-disabled"></i>
+                <span>Advanced reporting</span>
+              </li>
+              <li>
+                <i class="fas fa-times feature-icon feature-disabled"></i>
+                <span>Priority support</span>
+              </li>
+              <li>
+                <i class="fas fa-times feature-icon feature-disabled"></i>
+                <span>Custom integrations</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline" data-plan="basic"
+              >Get Started</a
+            >
+          </div>
+
+          <!-- Standard Plan (Popular) -->
+          <div class="pricing-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3 class="pricing-name">Standard</h3>
+              <div class="pricing-price">
+                <span id="standardPrice">$49</span>
+              </div>
+              <div class="pricing-period">per month</div>
+              <p class="pricing-description">
+                Great for growing teams and businesses
+              </p>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Up to 20 projects</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>100GB storage</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Advanced analytics</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Priority email support</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Advanced reporting</span>
+              </li>
+              <li>
+                <i class="fas fa-times feature-icon feature-disabled"></i>
+                <span>Dedicated account manager</span>
+              </li>
+              <li>
+                <i class="fas fa-times feature-icon feature-disabled"></i>
+                <span>Custom integrations</span>
+              </li>
+            </ul>
+            <a href="#" class="btn" data-plan="standard">Get Started</a>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-name">Premium</h3>
+              <div class="pricing-price">
+                <span id="premiumPrice">$99</span>
+              </div>
+              <div class="pricing-period">per month</div>
+              <p class="pricing-description">
+                For enterprises with advanced needs
+              </p>
+            </div>
+            <ul class="pricing-features">
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Unlimited projects</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>1TB storage</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Advanced analytics</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>24/7 phone & chat support</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Advanced reporting</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Dedicated account manager</span>
+              </li>
+              <li>
+                <i class="fas fa-check feature-icon"></i>
+                <span>Custom integrations</span>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-outline" data-plan="premium"
+              >Get Started</a
+            >
+          </div>
+        </div>
+
+        <!-- Feature Comparison Table -->
+        <div class="feature-comparison">
+          <h2 class="comparison-title">Plan Comparison</h2>
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th class="feature-name">Features</th>
+                <th>Basic</th>
+                <th>Standard</th>
+                <th>Premium</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="feature-name">Projects</td>
+                <td>Up to 5</td>
+                <td>Up to 20</td>
+                <td>Unlimited</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Storage</td>
+                <td>10GB</td>
+                <td>100GB</td>
+                <td>1TB</td>
+              </tr>
+              <tr>
+                <td class="feature-name">Analytics</td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Email Support</td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Priority Support</td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Advanced Reporting</td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Custom Integrations</td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+              <tr>
+                <td class="feature-name">Dedicated Account Manager</td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-times x-icon"></i></td>
+                <td><i class="fas fa-check check-icon"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="faq-title">Frequently Asked Questions</h2>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3>Can I switch plans at any time?</h3>
+              <p>
+                Yes, you can upgrade or downgrade your plan at any time. Changes
+                will be prorated and reflected in your next billing cycle.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>Is there a free trial available?</h3>
+              <p>
+                Yes, we offer a 14-day free trial on all plans. No credit card
+                required to start your trial.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>What payment methods do you accept?</h3>
+              <p>
+                We accept all major credit cards, PayPal, and bank transfers for
+                annual plans.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>Do you offer discounts for nonprofits?</h3>
+              <p>
+                Yes, we offer a 30% discount for registered nonprofits. Contact
+                our sales team for more information.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+          <h2 class="cta-title">Ready to Get Started?</h2>
+          <p class="cta-description">
+            Join thousands of satisfied customers who have already chosen our
+            platform to grow their business.
+          </p>
+          <div class="cta-btns">
+            <a href="#" class="btn cta-btn">Start Free Trial</a>
+            <a href="#" class="btn cta-btn-outline">Schedule a Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-logo">SaaSPlatform</div>
+        <div class="footer-links">
+          <a href="#">Home</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+          <p>
+            &copy; 2023 SaaSPlatform. All rights reserved. |
+            <a href="#" style="color: #aaa; text-decoration: underline"
+              >Privacy Policy</a
+            >
+            |
+            <a href="#" style="color: #aaa; text-decoration: underline"
+              >Terms of Service</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

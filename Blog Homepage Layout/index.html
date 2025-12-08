@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Insights | Modern Tech Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Digital<span class="highlight">Insights</span></a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">AI & Machine Learning</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="#" class="btn-outline btn"><i class="fas fa-search"></i></a>
+                    <a href="#" class="btn">Subscribe</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <div class="container">
+        <div class="main-content">
+            <!-- Main Content Column -->
+            <div class="content-column">
+                <!-- Featured Article -->
+                <section class="featured-article">
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="The Future of AI in Web Development">
+                        </div>
+                        <div class="featured-content">
+                            <span class="category-tag">AI & Machine Learning</span>
+                            <h2>The Future of AI in Web Development: What Developers Need to Know</h2>
+                            <p>Artificial Intelligence is transforming how we build websites and applications. From automated code generation to intelligent testing, AI tools are becoming essential in every developer's toolkit.</p>
+                            <div class="featured-meta">
+                                <div class="author">
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Author" class="author-img">
+                                    <span>Michael Chen</span>
+                                </div>
+                                <span><i class="far fa-calendar"></i> March 15, 2023</span>
+                                <span class="read-time"><i class="far fa-clock"></i> 8 min read</span>
+                            </div>
+                            <a href="#" class="btn">Read Full Article</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 3-Column Blog Grid -->
+                <section>
+                    <div class="section-title">
+                        <h2>Latest <span class="highlight">Articles</span></h2>
+                    </div>
+                    <div class="blog-grid" id="blogGrid">
+                        <!-- Blog cards will be populated by JavaScript -->
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <button class="page-btn">4</button>
+                        <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Sidebar Column -->
+            <aside class="sidebar">
+                <!-- Search Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Search Articles</h3>
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="Type keywords...">
+                        <button type="submit" class="search-btn"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="categories-list" id="categoriesList">
+                        <!-- Categories will be populated by JavaScript -->
+                    </ul>
+                </div>
+
+                <!-- Popular Posts Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Popular Posts</h3>
+                    <ul class="popular-posts">
+                        <li class="popular-post">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Post" class="popular-post-img">
+                            <div class="popular-post-content">
+                                <h4>10 JavaScript Frameworks to Watch in 2023</h4>
+                                <div class="popular-post-meta">Mar 10, 2023 • 6 min read</div>
+                            </div>
+                        </li>
+                        <li class="popular-post">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Post" class="popular-post-img">
+                            <div class="popular-post-content">
+                                <h4>Building Responsive Layouts with CSS Grid</h4>
+                                <div class="popular-post-meta">Mar 5, 2023 • 5 min read</div>
+                            </div>
+                        </li>
+                        <li class="popular-post">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Post" class="popular-post-img">
+                            <div class="popular-post-content">
+                                <h4>The Rise of No-Code Development Platforms</h4>
+                                <div class="popular-post-meta">Feb 28, 2023 • 7 min read</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="widget">
+                    <h3 class="widget-title">Newsletter</h3>
+                    <p style="color: var(--gray); margin-bottom: 20px;">Subscribe to get the latest articles delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Digital<span class="highlight">Insights</span></div>
+                    <div class="footer-about">
+                        <p>A modern blog exploring technology, web development, design, and the future of digital innovation.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Productivity</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 123 Tech Street, San Francisco, CA</li>
+                        <li><i class="fas fa-envelope" style="margin-right: 10px;"></i> contact@digitalinsights.com</li>
+                        <li><i class="fas fa-phone" style="margin-right: 10px;"></i> (555) 123-4567</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Digital Insights. All rights reserved. | <a href="#" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: var(--primary); text-decoration: underline;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

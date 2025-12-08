@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Bella Vista | Authentic Italian Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">La <span>Bella</span> Vista</a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#dishes">Popular Dishes</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="tel:+15551234567" class="btn-outline btn"><i class="fas fa-phone"></i> (555) 123-4567</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Authentic Italian Cuisine</h1>
+                <p>Experience the taste of Italy with our handcrafted dishes made from the finest ingredients, served in an elegant atmosphere.</p>
+                <div class="hero-btns">
+                    <a href="#menu" class="btn">View Our Menu</a>
+                    <a href="#reservation" class="btn btn-outline">Book a Table</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Menu</span></h2>
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="appetizers">Appetizers</button>
+                <button class="category-btn" data-category="main">Main Course</button>
+                <button class="category-btn" data-category="pasta">Pasta</button>
+                <button class="category-btn" data-category="dessert">Desserts</button>
+                <button class="category-btn" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-items" id="menuItems">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Dishes -->
+    <section id="dishes">
+        <div class="container">
+            <h2 class="section-title">Popular <span class="highlight">Dishes</span></h2>
+            <div class="dishes-grid">
+                <!-- Dish 1 -->
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Truffle Risotto" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Truffle Risotto</h3>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span> (4.7)</span>
+                        </div>
+                        <p>Creamy Arborio rice with black truffle and Parmigiano-Reggiano</p>
+                        <p class="price">$24.99</p>
+                    </div>
+                </div>
+                
+                <!-- Dish 2 -->
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Margherita Pizza" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Wood-fired Pizza</h3>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span> (5.0)</span>
+                        </div>
+                        <p>Classic Neapolitan pizza with San Marzano tomatoes and fresh basil</p>
+                        <p class="price">$18.99</p>
+                    </div>
+                </div>
+                
+                <!-- Dish 3 -->
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Osso Buco" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Osso Buco</h3>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span> (4.9)</span>
+                        </div>
+                        <p>Braised veal shanks with gremolata and saffron risotto</p>
+                        <p class="price">$32.99</p>
+                    </div>
+                </div>
+                
+                <!-- Dish 4 -->
+                <div class="dish-card">
+                    <img src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tiramisu" class="dish-img">
+                    <div class="dish-info">
+                        <h3>Tiramisu</h3>
+                        <div class="dish-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span> (4.8)</span>
+                        </div>
+                        <p>Classic Italian dessert with layers of coffee-soaked ladyfingers</p>
+                        <p class="price">$9.99</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Customer <span class="highlight">Reviews</span></h2>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <p class="review-text">The best Italian restaurant in the city! The pasta is homemade and the service is impeccable. We come here for every special occasion.</p>
+                    <div class="reviewer-info">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Michael Rodriguez" class="reviewer-img">
+                        <div>
+                            <h4 class="reviewer-name">Michael Rodriguez</h4>
+                            <p class="reviewer-role">Food Critic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation CTA -->
+    <section class="reservation-cta" id="reservation">
+        <div class="container">
+            <h2>Make a Reservation</h2>
+            <p>Book your table at La Bella Vista for an unforgettable dining experience. We recommend making reservations in advance, especially for weekend evenings.</p>
+            <a href="#reservation-form" class="btn">Reserve Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">La <span>Bella</span> Vista</div>
+                    <div class="footer-about">
+                        <p>An authentic Italian restaurant bringing the flavors of Italy to your table since 1995. We pride ourselves on using traditional recipes and the finest ingredients.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>123 Italia Avenue</p>
+                                <p>New York, NY 10001</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p>(555) 123-4567</p>
+                                <p>(555) 987-6543</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>info@labellavista.com</p>
+                                <p>reservations@labellavista.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Opening Hours</h3>
+                    <div class="opening-hours">
+                        <p><strong>Monday - Thursday:</strong> 11:00 AM - 10:00 PM</p>
+                        <p><strong>Friday - Saturday:</strong> 11:00 AM - 11:00 PM</p>
+                        <p><strong>Sunday:</strong> 12:00 PM - 9:00 PM</p>
+                        <p><strong>Brunch:</strong> Saturday & Sunday 11:00 AM - 3:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 La Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Reservation Form Modal -->
+    <div id="reservationModal" class="modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+        <div style="background-color: white; padding: 40px; border-radius: var(--border-radius); max-width: 600px; width: 90%; max-height: 90vh; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2 style="margin-bottom: 0;">Make a Reservation</h2>
+                <span id="closeModal" style="font-size: 2rem; cursor: pointer; color: var(--primary);">&times;</span>
+            </div>
+            <form id="reservationForm">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <label for="reservation-name">Full Name *</label>
+                        <input type="text" id="reservation-name" class="form-control" placeholder="Your name" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                    </div>
+                    <div>
+                        <label for="reservation-email">Email Address *</label>
+                        <input type="email" id="reservation-email" class="form-control" placeholder="Your email" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <label for="reservation-phone">Phone Number *</label>
+                        <input type="tel" id="reservation-phone" class="form-control" placeholder="Your phone" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                    </div>
+                    <div>
+                        <label for="reservation-guests">Number of Guests *</label>
+                        <select id="reservation-guests" class="form-control" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                            <option value="">Select guests</option>
+                            <option value="1">1 person</option>
+                            <option value="2">2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7+ people</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+                    <div>
+                        <label for="reservation-date">Date *</label>
+                        <input type="date" id="reservation-date" class="form-control" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                    </div>
+                    <div>
+                        <label for="reservation-time">Time *</label>
+                        <select id="reservation-time" class="form-control" required style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius);">
+                            <option value="">Select time</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="17:30">5:30 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="18:30">6:30 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="19:30">7:30 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                            <option value="20:30">8:30 PM</option>
+                            <option value="21:00">9:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <label for="reservation-notes">Special Requests</label>
+                    <textarea id="reservation-notes" class="form-control" placeholder="Any special requests or dietary restrictions?" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: var(--border-radius); min-height: 100px;"></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Confirm Reservation</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

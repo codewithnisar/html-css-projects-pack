@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Adventures | Discover Your Next Journey</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-globe-americas logo-icon"></i>
+                    Wander<span>lust</span>
+                </a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#packages">Packages</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="tel:+15551234567" class="btn-outline btn"><i class="fas fa-phone"></i> (555) 123-4567</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Fullscreen Hero -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover The <span class="highlight">World</span> With Us</h1>
+                <p>Experience unforgettable journeys to the most breathtaking destinations. Your dream vacation is just a click away.</p>
+                <div class="hero-btns">
+                    <a href="#destinations" class="btn">Explore Destinations</a>
+                    <a href="#contact" class="btn btn-secondary">Plan Your Trip</a>
+                </div>
+                <div class="search-box">
+                    <form class="search-form">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" class="form-control" placeholder="Where do you want to go?">
+                        </div>
+                        <div class="form-group">
+                            <label for="travel-date">Travel Date</label>
+                            <input type="date" id="travel-date" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Travelers</label>
+                            <select id="travelers" class="form-control">
+                                <option value="1">1 Traveler</option>
+                                <option value="2">2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5+">5+ Travelers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget</label>
+                            <select id="budget" class="form-control">
+                                <option value="economy">Economy</option>
+                                <option value="standard">Standard</option>
+                                <option value="luxury">Luxury</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="submit" class="btn" style="width: 100%;">Search</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations -->
+    <section id="destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Popular <span class="highlight">Destinations</span></h2>
+                <p>Explore our handpicked selection of the world's most beautiful and exciting travel destinations.</p>
+            </div>
+            <div class="destinations-grid">
+                <!-- Destination 1 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Santorini, Greece" class="destination-img">
+                    <div class="destination-info">
+                        <div class="destination-price">$1,299</div>
+                        <h3>Santorini, Greece</h3>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span> (4.7)</span>
+                        </div>
+                        <p>Experience the stunning white-washed buildings and breathtaking sunsets of this iconic Greek island.</p>
+                        <div class="destination-details">
+                            <div class="destination-detail">
+                                <i class="far fa-calendar"></i>
+                                <span>7 Days</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>All Inclusive</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 2 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bali, Indonesia" class="destination-img">
+                    <div class="destination-info">
+                        <div class="destination-price">$1,599</div>
+                        <h3>Bali, Indonesia</h3>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span> (5.0)</span>
+                        </div>
+                        <p>Discover tropical paradise with lush jungles, ancient temples, and pristine beaches.</p>
+                        <div class="destination-details">
+                            <div class="destination-detail">
+                                <i class="far fa-calendar"></i>
+                                <span>10 Days</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Most Meals</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Destination 3 -->
+                <div class="destination-card">
+                    <img src="https://images.unsplash.com/photo-1513326738677-b964603b136d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Kyoto, Japan" class="destination-img">
+                    <div class="destination-info">
+                        <div class="destination-price">$2,199</div>
+                        <h3>Kyoto, Japan</h3>
+                        <div class="destination-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span> (4.9)</span>
+                        </div>
+                        <p>Immerse yourself in traditional Japanese culture with ancient temples and beautiful gardens.</p>
+                        <div class="destination-details">
+                            <div class="destination-detail">
+                                <i class="far fa-calendar"></i>
+                                <span>12 Days</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-user-friends"></i>
+                                <span>Breakfast Only</span>
+                            </div>
+                            <div class="destination-detail">
+                                <i class="fas fa-plane"></i>
+                                <span>Flight Included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Pricing -->
+    <section class="pricing" id="packages">
+        <div class="container">
+            <div class="section-title">
+                <h2>Travel <span class="highlight">Packages</span></h2>
+                <p>Choose from our carefully curated travel packages designed for every type of traveler.</p>
+            </div>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Essential</h3>
+                        <div class="pricing-price">$799<span>/person</span></div>
+                        <p class="pricing-period">Basic package</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Round-trip Economy Flight</li>
+                        <li><i class="fas fa-check"></i> 3-Star Hotel Accommodation</li>
+                        <li><i class="fas fa-check"></i> Daily Breakfast</li>
+                        <li><i class="fas fa-check"></i> Airport Transfers</li>
+                        <li><i class="fas fa-times disabled"></i> Guided Tours</li>
+                        <li><i class="fas fa-times disabled"></i> Travel Insurance</li>
+                        <li><i class="fas fa-times disabled"></i> 24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Book Now</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Premium</h3>
+                        <div class="pricing-price">$1,499<span>/person</span></div>
+                        <p class="pricing-period">Best value</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Essential</li>
+                        <li><i class="fas fa-check"></i> Round-trip Premium Economy</li>
+                        <li><i class="fas fa-check"></i> 4-Star Hotel Accommodation</li>
+                        <li><i class="fas fa-check"></i> Half Board (Breakfast + Dinner)</li>
+                        <li><i class="fas fa-check"></i> Guided City Tours</li>
+                        <li><i class="fas fa-check"></i> Travel Insurance Included</li>
+                        <li><i class="fas fa-times disabled"></i> Private Transfers</li>
+                    </ul>
+                    <a href="#" class="btn" style="width: 100%; text-align: center;">Book Now</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Luxury</h3>
+                        <div class="pricing-price">$2,999<span>/person</span></div>
+                        <p class="pricing-period">Ultimate experience</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Premium</li>
+                        <li><i class="fas fa-check"></i> Round-trip Business Class</li>
+                        <li><i class="fas fa-check"></i> 5-Star Luxury Resort</li>
+                        <li><i class="fas fa-check"></i> All-Inclusive Dining</li>
+                        <li><i class="fas fa-check"></i> Private Guided Tours</li>
+                        <li><i class="fas fa-check"></i> Private Transfers</li>
+                        <li><i class="fas fa-check"></i> Concierge Service</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline" style="width: 100%; text-align: center;">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section id="reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Customer <span class="highlight">Reviews</span></h2>
+                <p>See what our travelers have to say about their experiences with Wanderlust Adventures.</p>
+            </div>
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <p class="review-text">Our trip to Japan with Wanderlust was absolutely incredible! Every detail was perfectly planned, and the guides were knowledgeable and friendly. We'll definitely be booking our next vacation with them.</p>
+                    <div class="review-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Jennifer Lee" class="author-img">
+                        <div class="author-info">
+                            <h4>Jennifer Lee</h4>
+                            <p>Traveled to Japan, 2023</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Plan Your <span class="highlight">Journey</span></h2>
+                <p>Ready to start your adventure? Contact us to plan your perfect getaway.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Create Your Dream Vacation</h3>
+                    <p>Our travel experts are ready to help you plan the perfect trip tailored to your preferences, budget, and timeline.</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p>info@wanderlust.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Visit Us</h4>
+                                <p>123 Travel Street, New York, NY 10001</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Mon-Fri: 9AM-6PM | Sat: 10AM-4PM</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="" disabled selected>Interested Destination</option>
+                                <option value="greece">Greece</option>
+                                <option value="bali">Bali</option>
+                                <option value="japan">Japan</option>
+                                <option value="italy">Italy</option>
+                                <option value="maldives">Maldives</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option value="" disabled selected>Travel Month</option>
+                                <option value="jan">January</option>
+                                <option value="feb">February</option>
+                                <option value="mar">March</option>
+                                <option value="apr">April</option>
+                                <option value="may">May</option>
+                                <option value="jun">June</option>
+                                <option value="jul">July</option>
+                                <option value="aug">August</option>
+                                <option value="sep">September</option>
+                                <option value="oct">October</option>
+                                <option value="nov">November</option>
+                                <option value="dec">December</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Tell us about your dream vacation..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-globe-americas logo-icon"></i>
+                        Wander<span>lust</span>
+                    </div>
+                    <div class="footer-about">
+                        <p>Creating unforgettable travel experiences since 2010. We specialize in personalized journeys to the world's most amazing destinations.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Top Destinations</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Santorini, Greece</a></li>
+                        <li><a href="#">Bali, Indonesia</a></li>
+                        <li><a href="#">Kyoto, Japan</a></li>
+                        <li><a href="#">Swiss Alps</a></li>
+                        <li><a href="#">Maldives</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get special offers and travel inspiration.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your email address" required>
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Wanderlust Adventures. All rights reserved. | <a href="#" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: var(--primary); text-decoration: underline;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Properties | Find Your Dream Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <i class="fas fa-home logo-icon"></i>
+                    PrimeProperties
+                </a>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#listings">Listings</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-btns">
+                    <a href="tel:+15551234567" class="btn-outline btn"><i class="fas fa-phone"></i> (555) 123-4567</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Filters -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-container">
+                <h3 class="search-title">Find Your Dream Property</h3>
+                <div class="search-filters">
+                    <div class="filter-group">
+                        <label for="location">Location</label>
+                        <select id="location" class="filter-control">
+                            <option value="">Any Location</option>
+                            <option value="downtown">Downtown</option>
+                            <option value="suburbs">Suburbs</option>
+                            <option value="northside">Northside</option>
+                            <option value="southside">Southside</option>
+                            <option value="eastside">Eastside</option>
+                            <option value="westside">Westside</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type" class="filter-control">
+                            <option value="">Any Type</option>
+                            <option value="house">House</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="condo">Condo</option>
+                            <option value="townhouse">Townhouse</option>
+                            <option value="villa">Villa</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="price-range">Price Range</label>
+                        <select id="price-range" class="filter-control">
+                            <option value="">Any Price</option>
+                            <option value="0-300000">Up to $300,000</option>
+                            <option value="300000-500000">$300,000 - $500,000</option>
+                            <option value="500000-800000">$500,000 - $800,000</option>
+                            <option value="800000-1200000">$800,000 - $1.2M</option>
+                            <option value="1200000+">$1.2M+</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="bedrooms">Bedrooms</label>
+                        <select id="bedrooms" class="filter-control">
+                            <option value="">Any</option>
+                            <option value="1">1+</option>
+                            <option value="2">2+</option>
+                            <option value="3">3+</option>
+                            <option value="4">4+</option>
+                            <option value="5">5+</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="search-actions">
+                    <div class="results-count">Showing 12 properties</div>
+                    <button class="btn" id="searchBtn">
+                        <i class="fas fa-search"></i> Search Properties
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Property -->
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured <span class="highlight">Property</span></h2>
+            </div>
+            <div class="featured-property">
+                <div class="featured-content">
+                    <span class="featured-badge">Featured Listing</span>
+                    <h2>Modern Luxury Villa with Ocean View</h2>
+                    <p>Stunning contemporary villa located in the exclusive Hillside neighborhood with panoramic ocean views, smart home features, and premium finishes throughout.</p>
+                    <div class="featured-details">
+                        <div class="featured-detail">
+                            <i class="fas fa-bed"></i>
+                            <span>4 Bedrooms</span>
+                        </div>
+                        <div class="featured-detail">
+                            <i class="fas fa-bath"></i>
+                            <span>3.5 Bathrooms</span>
+                        </div>
+                        <div class="featured-detail">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>3,200 sq ft</span>
+                        </div>
+                        <div class="featured-detail">
+                            <i class="fas fa-car"></i>
+                            <span>2 Garage</span>
+                        </div>
+                    </div>
+                    <div class="featured-price">$1,250,000</div>
+                    <a href="#" class="btn">Schedule a Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Cards Grid -->
+    <section id="listings">
+        <div class="container">
+            <div class="section-title">
+                <h2>Latest <span class="highlight">Listings</span></h2>
+            </div>
+            <div class="properties-grid" id="propertiesGrid">
+                <!-- Property cards will be populated by JavaScript -->
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <i class="fas fa-home logo-icon"></i>
+                        PrimeProperties
+                    </div>
+                    <div class="footer-about">
+                        <p>Your trusted partner in finding the perfect home. With over 15 years of experience, we've helped thousands of families find their dream properties.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#listings">Properties</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#">Sell Your Property</a></li>
+                        <li><a href="#">Agents</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Property Types</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Apartments</a></li>
+                        <li><a href="#">Houses</a></li>
+                        <li><a href="#">Condos</a></li>
+                        <li><a href="#">Townhouses</a></li>
+                        <li><a href="#">Commercial</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>123 Real Estate Ave<br>New York, NY 10001</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>(555) 123-4567</div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>info@primeproperties.com</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Prime Properties. All rights reserved. | <a href="#" style="color: var(--primary); text-decoration: underline;">Privacy Policy</a> | <a href="#" style="color: var(--primary); text-decoration: underline;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Detail Modal -->
+    <div id="propertyModal" class="modal" style="display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center;">
+        <div style="background-color: white; padding: 40px; border-radius: var(--radius); max-width: 800px; width: 90%; max-height: 90vh; overflow-y: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                <h2 style="margin-bottom: 0;" id="modalTitle">Property Details</h2>
+                <span id="closeModal" style="font-size: 2rem; cursor: pointer; color: var(--primary);">&times;</span>
+            </div>
+            <div id="modalContent">
+                <!-- Modal content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
