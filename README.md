@@ -1,119 +1,105 @@
 # HTML & CSS Projects Pack  
-10 Fully Designed Beginner-Friendly Projects
+## 10 Fully Designed Beginner-Friendly Projects
+
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![Projects](https://img.shields.io/badge/Projects-10-green) ![Responsive](https://img.shields.io/badge/Responsive-Yes-success) ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## 📋 Table of Contents
+- [About](#-about-this-pack)
+- [Projects](#-included-projects)
+- [Features](#-features)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Preview](#-preview)
+- [Support](#-support)
+- [License](#-license)
 
 ## 📌 About This Pack
-“HTML & CSS Projects Pack” aik digital product hai jisme tumhe **10 complete, ready-made, professional projects** miltay hain.  
-Ye pack specially beginners, students, aur self-learners ke liye design kiya gaya hai jo apni HTML + CSS skills improve karna chahte hain.
+"HTML & CSS Projects Pack" is a digital product containing **10 complete, ready-made, professional projects**. This pack is specially designed for beginners, students, and self-learners who want to improve their HTML + CSS skills.
 
-Har project **pure HTML + CSS** par based hai — *no JavaScript required.*  
-Ye projects tumhari **portfolio building**, **practice**, aur **freelancing journey** dono ke liye perfect hain.
+Each project is **pure HTML + CSS** based — *no JavaScript required*. These projects are perfect for **portfolio building**, **practice**, and **freelancing journey**.
 
----
+## 🚀 Features
+- ✅ 10 High-Quality Projects
+- ✅ Complete HTML files with semantic markup
+- ✅ Clean, well-commented CSS files
+- ✅ Images & assets folder included
+- ✅ Fully responsive layouts
+- ✅ Modern UI/UX designs
+- ✅ Beginner-friendly code with comments
+- ✅ Professional-grade designs
 
-## ⭐ What’s Included
-✔ 10 High-Quality Projects  
-✔ Complete `index.html` files  
-✔ Clean `style.css` files  
-✔ Images & assets folder  
-✔ Fully responsive layouts  
-✔ Modern UI/UX designs  
-✔ Beginner-friendly code with comments  
-✔ Instant digital download (ZIP file)
+## 📂 Included Projects
 
----
+| Project | Description | Preview |
+|---------|-------------|---------|
+| **1. Personal Portfolio Website** | Clean and modern portfolio template with hero banner, about me section, skills grid, project cards, and responsive layout. | `portfolio.html` |
+| **2. Restaurant Landing Page** | Hero banner, food menu section, featured dishes, customer reviews, and contact UI. Professional restaurant industry design. | `restaurant.html` |
+| **3. Modern Login & Signup Page** | Glassmorphism UI, floating labels, stylish forms, and smooth layout. Excellent for learning UI design and form styling. | `login.html` |
+| **4. Product Landing Page** | Beautiful hero image, features list, pricing section, and CTA buttons. Best project for learning marketing-style design. | `product.html` |
+| **5. Gym Fitness Website** | Dark theme UI, trainers section, classes grid, and subscription pricing. Professional fitness brand design. | `gym.html` |
+| **6. Travel Agency Website** | Fullscreen hero section + popular destinations cards + travel packages. Strong UI example for tourism industry. | `travel.html` |
+| **7. Photography Portfolio** | Masonry grid gallery, services cards, testimonials, and contact CTA. Perfect for photography and visual-heavy websites. | `photography.html` |
+| **8. Real Estate Listing Page** | Property cards, featured houses section, filters UI, and clean spacing. Professional layout for home renting/buying websites. | `realestate.html` |
+| **9. Pricing Plans Page** | Three-plan pricing table with hover effects and feature list. Modern and clean SaaS-style pricing UI. | `pricing.html` |
+| **10. Blog Homepage Layout** | Header navigation, featured article section, blog cards, sidebar widgets. Excellent for learning CMS-style website layouts. | `blog.html` |
 
-## 🚀 Why This Pack is Valuable
-- Real-world project practice  
-- Portfolio-ready layouts  
-- Students & beginners ke liye easy-to-edit code  
-- Design inspiration + clean UI patterns  
-- Freelancing start karne ke liye perfect samples  
+## 📦 Installation
 
----
+### Method 1: Download ZIP
+1. Click on the **Code** button
+2. Select **Download ZIP**
+3. Extract the ZIP file to your desired location
 
-# 📂 Included Projects (Descriptions)
+### Method 2: Clone Repository
+```bash
+git clone https://github.com/codewithnisar/html-css-projects-pack.git
+```
 
-### **1. Personal Portfolio Website**
-A clean and modern portfolio template with hero banner, about me section, skills grid, project cards, and responsive layout.  
-Perfect for beginners to showcase their work.
+## 🛠️ Usage
 
----
+1. **Navigate to any project folder:**
+```bash
+cd project-name
+```
 
-### **2. Restaurant Landing Page**
-Hero banner, food menu section, featured dishes, customer reviews, and contact UI.  
-Ye layout restaurant industry ke liye professional feel deta hai.
+2. **Open the project:**
+   - Open `index.html` in any browser
+   - Or use a local server for better experience
 
----
+3. **Edit and customize:**
+   - Modify `index.html` for content
+   - Update `style.css` for styling
+   - Replace images in `assets/` folder
+   - Add your personal information
 
-### **3. Modern Login & Signup Page**
-Glassmorphism UI, floating labels, stylish forms, and smooth layout.  
-UI design seekhne aur form styling practice ke liye excellent.
+## 🎯 Target Audience
+- HTML & CSS beginners
+- Students and bootcamp learners
+- Coding practice seekers
+- Freelancers starting their journey
+- Teachers & coding instructors
+- Portfolio builders
 
----
+## 📸 Preview
+Each project includes:
+- Clean, modern design
+- Responsive layout
+- Cross-browser compatibility
+- Well-structured code
 
-### **4. Product Landing Page**
-Beautiful hero image, features list, pricing section, and CTA buttons.  
-Marketing-style design sikhne ka best project.
+## 🆘 Support
+If you need help using any project:
+1. Check the code comments
+2. Review the file structure
+3. Contact support for assistance
 
----
+## 📄 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### **5. Gym Fitness Website**
-Dark theme UI, trainers section, classes grid, aur subscription pricing.  
-Professional fitness brand feel provide karta hai.
-
----
-
-### **6. Travel Agency Website**
-Fullscreen hero section + popular destinations cards + travel packages.  
-Tourism industry ka strong UI example.
-
----
-
-### **7. Photography Portfolio**
-Masonry grid gallery, services cards, testimonials, and contact CTA.  
-Perfect for photography layouts aur visual-heavy websites.
-
----
-
-### **8. Real Estate Listing Page**
-Property cards, featured houses section, filters UI, aur clean spacing.  
-Home renting/buying website jaisa professional layout.
-
----
-
-### **9. Pricing Plans Page**
-Three-plan pricing table with hover effects and feature list.  
-SaaS-style modern and clean pricing UI.
-
----
-
-### **10. Blog Homepage Layout**
-Header navigation, featured article section, blog cards, sidebar widgets.  
-CMS-style website layouts sikhne ke liye excellent.
+## 🌟 Show Your Support
+If you find this pack helpful, please give it a star! ⭐
 
 ---
+**Happy Coding!** 🚀
 
-## 📬 How to Use
-1. ZIP download karo  
-2. Kisi project ka folder open karo  
-3. `index.html` ko browser mein run karo  
-4. CSS/Images folder ko zaroor saath rakho  
-5. Apne naam, text, images ke sath edit karke publish kar do  
-
----
-
-## 🎯 Who Is This Pack For?
-- HTML & CSS beginners  
-- Students  
-- Bootcamp learners  
-- Coding practice seekers  
-- Freelancers  
-- Teachers & coding instructors  
-- Portfolio builders  
-
----
-
-## 💬 Support
-Agar aapko kisi bhi project ko use karne mein help chahiye ho, tau support available hai.  
-Enjoy building & learning! 🚀
-
+Built with ❤️ for the developer community
