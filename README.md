@@ -71,7 +71,7 @@ Each project is **pure HTML + CSS** based — *no JavaScript required*. These pr
 
 ### Method 2: Clone Repository
 ```bash
-git clone https://github.com/yourusername/html-css-projects-pack.git
+git clone https://github.com/codewithnisar/html-css-projects-pack.git
 ```
 
 ## 🛠️ Usage
@@ -122,3 +122,4 @@ If you find this pack helpful, please give it a star! ⭐
 **Happy Coding!** 🚀
 
 Built with ❤️ for the developer community
+
